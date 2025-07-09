@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mahakaal Electrical</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      background-color: #e6f0ff;
+      background-image: linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+                        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      color: #222;
     }
 
     header {
-      background-color: #ffa500;
+      background-color: #005bbb;
       color: white;
       padding: 30px 20px;
       text-align: center;
@@ -21,7 +24,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
 
     header p {
@@ -35,13 +38,16 @@
       margin: auto;
     }
 
-    .about {
-      margin-bottom: 30px;
+    .about img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .about h2, .services h2 {
-      color: #333;
-      border-bottom: 2px solid #ffa500;
+    .about h2, .services h2, .contact h2, .map h2 {
+      color: #005bbb;
+      border-bottom: 2px solid #005bbb;
       padding-bottom: 10px;
     }
 
@@ -50,7 +56,7 @@
       padding-left: 20px;
     }
 
-    .services ul li {
+    .services li {
       margin: 10px 0;
       font-size: 1.1em;
     }
@@ -65,10 +71,21 @@
       width: 120px;
     }
 
+    .map {
+      margin-top: 40px;
+    }
+
+    .map img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #333;
+      background-color: #003b80;
       color: white;
       margin-top: 40px;
     }
@@ -95,6 +112,15 @@
     .whatsapp-button:hover {
       transform: scale(1.1);
     }
+
+    a {
+      color: #005bbb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -107,8 +133,10 @@
     <section class="about">
       <h2>About Us</h2>
       <p>
-        Mahakaal Electrical, owned by Suresh Sarnagat, is a trusted name in the field of electrical and rooftop solar installations. Known for high-quality workmanship and reliable service, we provide cost-effective and durable solutions for homes and businesses.
+        Mahakaal Electrical, owned by Suresh Sarnagat, is a trusted name in the field of electrical and rooftop solar installations.
+        Known for high-quality workmanship and reliable service, we provide cost-effective and durable solutions for homes and businesses.
       </p>
+      <img src="https://cdn.pixabay.com/photo/2017/09/04/18/51/solar-system-2714875_1280.jpg" alt="Solar Installation Image" />
     </section>
 
     <section class="services">
@@ -125,6 +153,15 @@
       <h2>Contact Information</h2>
       <p><strong>Owner:</strong> Suresh Sarnagat</p>
       <p><strong>Phone:</strong> <a href="tel:9405343435">9405343435</a></p>
+    </section>
+
+    <section class="map">
+      <h2>Our Location</h2>
+      <p><a href="https://g.co/kgs/Ak81zaV" target="_blank">View on Google Maps</a></p>
+      <a href="https://g.co/kgs/Ak81zaV" target="_blank">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=20.5937,78.9629&zoom=6&size=800x400&maptype=roadmap&markers=color:red%7Clabel:M%7C20.5937,78.9629&key=YOUR_API_KEY" alt="Map location" />
+      </a>
+      <!-- Note: Replace with your real lat/lon or actual embedded snapshot if you want more accuracy -->
     </section>
   </div>
 
